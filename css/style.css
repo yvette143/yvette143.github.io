@@ -1,9 +1,17 @@
 /* #3A3B3B
 #E8CB49 */
 
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Noto Sans TC', sans-serif;
-}
+body  {
+	font-family: 'Noto Serif TC', serif;
+	font-weight: 700;  /* 設置為粗體以強化筆觸感 */
+	line-height: 1.6;
+	font-size: 1.1rem;
+  }
+  
+  h1, h2, h3, h4 {
+	font-family: 'Noto Serif TC', serif;
+	font-weight: 700;
+  }
 p,a,span,li,label{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.09rem;
@@ -323,3 +331,37 @@ footer ul{
 #intro .container {
 	padding: 200px 0;
 }
+.carousel-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .carousel-container {
+	width: 60%; /* 縮小到原本 75% 寬度 */
+	height: 60%; /* 或 75vh 依需求 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .carousel-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  
+  .carousel-inner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* 或 contain 根據需求選擇 */
+	display: block;
+  }
+  
+  footer p {
+	font-weight: bold; /* 讓段落文字變為粗體 */
+  }
