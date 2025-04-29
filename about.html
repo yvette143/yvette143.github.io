@@ -1,0 +1,152 @@
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="關於我們 - 我們的團隊與理念介紹">
+  <meta name="keywords" content="餐廳, 團隊, 理念">
+  <meta name="author" content="Yvette">
+  <title>關於我們</title>
+  <link rel="icon" href="img/logo/logo_small.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+              <li class="nav-item"><a class="nav-link" href="second.html">最新消息</a></li>            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  關於我們
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.html">我們的團隊</a></li>
+                  <li><a class="dropdown-item" href="about.html">餐廳理念</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div style="height: 100px;"></div>
+  <section class="container mt-5 pt-3">
+    <h2 class="text-center">我們的團隊</h2>
+    <p class="lead">我們的團隊由一群充滿熱情且具有專業經驗的人組成，致力於創造獨特的餐飲體驗，讓每一位客戶都能感受到食物與時間的完美交織。</p>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/team1.jpg" alt="Team Member 1" class="card-img-top">
+          <div class="card-body">
+            <h4>張經理</h4>
+            <p>餐廳經理，負責日常運營與客戶服務</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal1">查看大圖</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/team2.jpg" alt="Team Member 2" class="card-img-top">
+          <div class="card-body">
+            <h4>李主廚</h4>
+            <p>餐廳主廚，創造出色的料理，每一道菜都經過精心設計</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal2">查看大圖</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/team3.jpg" alt="Team Member 3" class="card-img-top">
+          <div class="card-body">
+            <h4>王服務員</h4>
+            <p>前台服務，為顧客提供無微不至的關懷</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal3">查看大圖</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container mt-5">
+    <h2 class="text-center">餐廳理念</h2>
+    <p class="lead">我們深信，餐飲不僅僅是填飽肚子，而是一場味覺與情感的交會。我們的理念是讓每位顧客在四季流轉的過程中，品嚐到當季最新鮮的食材，並且創造出難以忘懷的美好回憶。</p>
+  </section>
+  <!-- 張經理 -->
+  <div class="modal fade" id="teamModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">張經理</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body"><img src="img/team1.jpg" class="img-fluid" alt="張經理"></div>
+    </div></div>
+  </div>
+  <!-- 李主廚 -->
+  <div class="modal fade" id="teamModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">李主廚</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body"><img src="img/team2.jpg" class="img-fluid" alt="李主廚"></div>
+    </div></div>
+  </div>
+  <!-- 王服務員 -->
+  <div class="modal fade" id="teamModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">王服務員</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body"><img src="img/team3.jpg" class="img-fluid" alt="王服務員"></div>
+    </div></div>
+  </div>
+  <footer style="background-color: #f1ede8; padding: 40px 0;">
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-3 mb-4">
+          <img src="img/logo.png" alt="logo" width="120" class="mb-2">
+          <p style="font-size: 14px;">每一道料理，都是一封季節的情書<br>
+          <strong style="font-size: 13px;">すべての料理は、季節からのラブレター。</strong></p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">網站地圖</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-decoration-none text-dark">首頁</a></li>
+            <li><a href="second.html" class="text-decoration-none text-dark">最新消息</a></li>
+            <li><a href="about.html" class="text-decoration-none text-dark">我們的團隊</a></li>
+            <li><a href="about.html" class="text-decoration-none text-dark">餐廳理念</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">聯絡我們</h5>
+          <p style="font-size: 14px;">
+            台北市信義區松遠路29號<br>
+            Phone：(02) 2345-5168<br>
+            E-mail：<a href="mailto:season@gmail.com" class="text-dark">season@gmail.com</a>
+          </p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">追蹤我們</h5>
+          <div class="d-flex">
+            <a href="#" class="me-3 text-dark fs-4"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="me-3 text-dark fs-4"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark fs-4"><i class="fab fa-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

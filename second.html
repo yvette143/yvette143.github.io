@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="html, css, 網頁\ JS, javascript">
   <meta name="description" content="Here is my page.">
-  <meta name="Viewport" content="width=device-width, intial-scale=1.0 ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
   <meta name="author" content="Yvette">
   <!-- bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,49 +29,33 @@
 <body>
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index"><img src="img/logo.png" alt="logo" width="100"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="second.html" target="_blank">最新消息</a>
-              </li>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+              <li class="nav-item"><a class="nav-link" href="second.html">最新消息</a></li>            
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  關於我們
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="imovie.html">作品之一</a></li>
-                  <li><a class="dropdown-item" href="ihotal.html">作品之二</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="about.html">我們的團隊</a></li>
+                  <li><a class="dropdown-item" href="about.html">餐廳理念</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a herf="#" class="nav-link">聯絡我們</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
     </div>
   </header>
+  <div style="height: 100px;"></div>
   <div class="container carousel-container">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -101,16 +85,7 @@
       </button>
     </div>
   </div>
-  
-  <!-- CSS -->
-  <style>
-    .carousel-inner img {
-      width: 180%;
-      height: auto; /* 保持圖片比例 */
-      object-fit: contain; /* 確保圖片縮小並保持比例 */
-    }
-  </style>
-    </div>
+      </div>
   </div>
   <section id ="email">
     <div class="container">
@@ -132,40 +107,51 @@
     <div class="row">
         <div class="col-md-4"></div>
         <p>
-            <a button type="button" class="btn btn-secondary">訂閱</button></a>
+            <button type="button" class="btn btn-secondary">訂閱</button></a>
         </p>
       </div>
     </p>
     </div>       
   </section>
-  <footer>
+  <footer style="background-color: #f1ede8; padding: 40px 0;">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="img/logo.png" alt="" width="120">
-          <p>每一道料理，都是一封季節的情書<br>すべての料理は、季節からのラブレター。</p>
+      <div class="row text-start">
+        <div class="col-md-3 mb-4">
+          <img src="img/logo.png" alt="" width="120" class="mb-2">
+          <p style="font-size: 14px;">每一道料理，都是一封季節的情書<br>
+          <strong style="font-size: 13px;">すべての料理は、季節からのラブレター。</strong></p>
         </div>
-        <div class="col-md-4">
-          <h4>網站地圖</h4>
-          <ul>
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">最新消息</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">Vue作品</a></li>
-            <li><a href="#">聯絡我們</a></li>
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">網站地圖</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-decoration-none text-dark">首頁</a></li>
+            <li><a href="second.html" class="text-decoration-none text-dark">最新消息</a></li>
+            <li><a href="about.html" class="text-decoration-none text-dark">我們的團隊</a></li>
+            <li><a href="about.html" class="text-decoration-none text-dark">餐廳理念</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <h4>聯絡我們</h4>
-          <p>台北市信義區松遠路29號<br>
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">聯絡我們</h5>
+          <p style="font-size: 14px;">
+            台北市信義區松遠路29號<br>
             Phone：(02) 2345-5168<br>
-            E-mail：<a href="mailto:season@gmail.com">season@gmail.com</a>
+            E-mail：<a href="mailto:season@gmail.com" class="text-dark">season@gmail.com</a>
           </p>
         </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="mb-3">追蹤我們</h5>
+          <div class="d-flex">
+            <a href="#" class="me-3 text-dark fs-4"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="me-3 text-dark fs-4"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark fs-4"><i class="fab fa-line"></i></a>
+          </div>
+        </div>  
       </div>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous"></script>
 </body>
 </html>

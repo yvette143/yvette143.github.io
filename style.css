@@ -151,3 +151,69 @@ h2 {
 .add_room {
   cursor: pointer;
 }
+body {
+  background-color: #f8f4f0;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+h2, h3 {
+  font-family: 'Noto Serif TC', serif;
+}
+.card {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.card-title {
+  font-weight: bold;
+  color: #6a4e42;
+}
+.btn-primary {
+  background-color: #6a4e42;
+  border-color: #6a4e42;
+}
+.btn-primary:hover {
+  background-color: #5a4038;
+}
+.btn-outline-secondary {
+  color: #6a4e42;
+  border-color: #6a4e42;
+}
+.btn-outline-secondary:hover {
+  background-color: #6a4e42;
+  color: #fff;
+}
+.social-icons a {
+  font-size: 1.5rem;
+  color: #6a4e42;
+  margin-right: 15px;
+}
+.social-icons a:hover {
+  color: #a57d6d;
+}
+.modal-content {
+  background-color: #fefdfb;
+  color: #333;
+}
+body {
+  padding-top: 80px; /* 留出頂部導航欄的空間 */
+}
+.navbar {
+  z-index: 1000; /* 確保導航欄位於最上層 */
+}
+.social-icons i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #555;
+}
+.social-icons i:hover {
+  color: #007bff; /* 鼠標懸停時的顏色 */
+}
+.modal-body img {
+  width: 100%;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
